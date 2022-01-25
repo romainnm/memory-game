@@ -1,7 +1,7 @@
 import uniqid from "uniqid";
 
 const data = [
-  { name: "banana", image: "/img/banana.png", id: uniqid() },
+  { name: "banana", image: "./img/banana.png", id: uniqid() },
   { name: "dragon", image: "./img/dragon.png", id: uniqid() },
   { name: "kiwi", image: "./img/kiwi.png", id: uniqid() },
   { name: "lichi", image: "./img/lichi.png", id: uniqid() },
