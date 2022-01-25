@@ -4,12 +4,17 @@ import "./App.css";
 
 function App() {
   const [highScore, setHighScore] = useState(0);
-  const [currentGameList, setCurrentGameList] = useState(data);
+  const [currentGameList, setCurrentGameList] = useState([]);
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(()=>{
     shuffleImages(data)
-  },[currentGameList])
+    setCurrentGameList(data)
+  },[])
+
+    useEffect(() => {
+      shuffleImages(data);
+    }, [currentGameList]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
